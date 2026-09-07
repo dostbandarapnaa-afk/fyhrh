@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon City: Overdrive - GTA Upgraded</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-overlay">
+        <!-- Upgraded HUD -->
+        <div id="hud">
+            <div id="mode-status">मोड: <span id="current-mode">On Foot</span></div>
+            <div id="ammo-status">हथियार: <span id="equipped-gun">None</span> | गन काउंट: <span id="gun-count">0</span></div>
+            <div id="wanted-container">WANTED: <span id="wanted-stars">☆☆☆☆☆</span></div>
+            <div id="prompt">कार के पास 'F' दबाएं</div>
+        </div>
+
+        <!-- Crosshair for Shooting -->
+        <div id="crosshair">+</div>
+
+        <!-- Weapon Inventory Bar -->
+        <div id="inventory-bar">
+            <div class="inv-title">इन्वेंटरी (1-9 दबाकर चुनें):</div>
+            <div id="weapon-list">कोई गन नहीं है (NPCs को मारकर उठाएं)</div>
+        </div>
+        
+        <!-- Interactive Start Screen -->
+        <div id="start-screen">
+            <h1>NEON CITY: OVERDRIVE</h1>
+            <p class="story">
+                शहर में घूमें, कार चलाएं, दुश्मनों का सामना करें और पुलिस के वांटेड लेवल से बचें!
+            </p>
+            <p class="controls-info">
+                <b>कंट्रोल्स:</b><br>
+                [W, A, S, D] - मूवमेंट / ड्राइविंग<br>
+                [F] - कार में बैठने या निकलने के लिए<br>
+                [माउस क्लिक] - शूटिंग<br>
+                [1, 2, 3...] - इन्वेंटरी से हथियार चुनना
+            </p>
+            <button id="start-btn">गेम शुरू करें</button>
+        </div>
+    </div>
+
+    <!-- Three.js Engine & Game Logic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
